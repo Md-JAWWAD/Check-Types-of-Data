@@ -14,6 +14,7 @@ function checkTypesInArr(userArr) {
             booleansArr++;
         } else if (Array.isArray(userArr[i])) {
             nestedArr++;
+            checkTypesInArr(userArr[i])
         }
     }
 }
